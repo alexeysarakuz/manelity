@@ -1,0 +1,105 @@
+//Base styles
+.btn-primary
+  background-color: #FFC701
+  padding: 17px 35px
+  color: #fff
+  transition: .5s
+  border-radius: 3px
+  font-family: 'OpenSans', serif
+  font-weight: 600
+  font-size: 16px
+  border: none
+  &:hover
+    background-color: #fff
+    color: #FFC701
+//Main --nav styles
+header
+  background-image: url('../img/main-page/header-bg.jpg')
+  color: #fff
+  padding: 0 0 200px 0
+  background-position: center
+  background-size: cover
+  +max-screen(750px)
+    background-position: 1500px 0
+  nav
+    padding: 40px 0
+    .nav__logo
+      float: left
+      +max-screen(750px)
+        float: none
+        margin: 0 auto
+      .logo__image
+        display: inline-block
+        vertical-align: middle
+        margin-right: 20px
+        +max-screen(1200px)
+          margin-right: 10px
+      .logo__title
+        display: inline-block
+        vertical-align: middle
+        font-weight: 700
+        h2
+          font-size: 26px
+          font-family: 'Merriweather', serif
+          line-height: 1.2
+        i
+          font-family: 'OpenSans', serif
+          color: rgba(255,255,255,0.6)
+          font-style: italic
+          font-weight: 100
+    .nav__cat
+      float: right
+      +max-screen(750px)
+        float: none
+        text-align: center
+        margin: 0 auto
+      ul
+        +max-screen(750px)
+          padding-top: 70px
+        li
+          float: left
+          margin-left: 14.5px
+          margin-right: 14.5px
+          line-height: 64px
+          +max-screen(1200px)
+            margin-left: 7px
+            margin-right: 7px
+          +max-screen(750px)
+            float: none
+            text-align: center
+            width: 100%
+            margin: 0
+          ol
+            position: absolute
+            background-color: #fff
+            padding: 0 50px 0 10px
+            transition: .5s
+            opacity: 0
+            display: none
+            li
+              float: none
+              a
+                color: #231022
+          &.hide--dropdown
+            display: block
+            +max-screen(991px)
+              display: none
+            +max-screen(750px)
+              display: block
+          &.dropdown
+            display: none
+            +max-screen(991px)
+              display: block
+            +max-screen(750px)
+              display: none
+            &:hover
+              ol
+                display: block
+                opacity: 1
+          a
+            color: #fff
+            transition: .2s
+            &:hover
+              color: #FFC701
+            &.active
+              color: #FFC701

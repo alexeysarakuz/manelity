@@ -1,0 +1,67 @@
+section.video-section
+  padding: 200px 0
+  +max-screen(650px)
+    padding: 120px 0
+  .video__col
+    width: 50%
+    float: left
+    img
+      max-width: 100%
+      +max-screen(991px)
+        width: 80%
+        margin-left: 10%
+      +max-screen(767px)
+        width: 90%
+        margin-left: 5%
+      +max-screen(420px)
+        width: 100%
+        margin-left: 0
+    +max-screen(991px)
+      width: 100%
+      float: none
+      margin-bottom: 30px
+      margin-top: 30px
+  .video__content
+    padding-left: 10%
+    padding-top: 4%
+    +max-screen(1199px)
+      padding-top: 0
+    +max-screen(991px)
+      width: 70%
+      margin-left: 15%
+      margin-right: 15%
+      text-align: center
+      padding-left: 0
+      +max-screen(767px)
+        width: 90%
+        margin-left: 5%
+      +max-screen(420px)
+        width: 100%
+        margin-left: 0
+    h5
+      color: #f0a83a
+      font-family: 'Merriweather', serif
+      font-size: 18px
+      font-weight: 700
+      margin-bottom: 20px
+    h2
+      color: #231022
+      font-family: 'Merriweather', serif
+      font-size: 30px
+      line-height: 1.4
+      font-weight: 100
+      margin-bottom: 40px
+      +max-screen(1199px)
+        font-size: 25px
+        margin-bottom: 20px
+    p
+      color: #9b9ea2
+      font-size: 16px
+      font-family: 'OpenSans', sans-serif
+      font-weight: 200
+      line-height: 1.6
+      margin-bottom: 30px
+    button
+      &:hover
+        background-color: #231022
+        color: #fff

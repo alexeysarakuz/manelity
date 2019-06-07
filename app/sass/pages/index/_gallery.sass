@@ -1,0 +1,34 @@
+section.gallery-section
+  background-color: #F6F5ED
+  padding: 90px 0
+  h2
+    color: #231022
+    font-family: 'Merriweather', serif
+    font-size: 30px
+    line-height: 1.4
+    font-weight: 100
+    text-align: center
+    margin-bottom: 30px
+  div.gallery__col
+    width: 30.3333%
+    margin-left: 1.5%
+    margin-right: 1.5%
+    float: left
+    margin-bottom: 1.5%
+    overflow: hidden
+    +max-screen(991px)
+      width: 47%
+    +max-screen(510px)
+      width: 90%
+      margin-left: 5%
+      margin-right: 5%
+    +max-screen(340px)
+      width: 98%
+      margin-left: 1%
+      margin-right: 1%
+    img
+      transition: .5s
+      width: 100%
+    &:hover
+      img
+        transform: scale(1.4)
